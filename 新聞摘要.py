@@ -147,7 +147,7 @@ if st.button("🔍 開始進行新聞摘要", type="primary"):
             st.write(f"日期: {news['日期']}")
             
             with st.expander("查看完整新聞內容"):
-                st.markdown(news['內容'])
+                st.code(news['內容'])
 
             st.write("**TextRank 摘要:**")
             for i, sentence in enumerate(textrank_summary, 1):
