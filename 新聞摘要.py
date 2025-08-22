@@ -146,6 +146,9 @@ if st.button("🔍 開始進行新聞摘要", type="primary"):
             st.subheader(f"{news['標題']}", divider='rainbow')
             st.write(f"日期: {news['日期']}")
             
+            with st.expander("查看完整新聞內容"):
+                st.write(news['內容'])
+                
             st.write("**TextRank 摘要:**")
             for i, sentence in enumerate(textrank_summary, 1):
                 st.write(f"{i}. {sentence}")
