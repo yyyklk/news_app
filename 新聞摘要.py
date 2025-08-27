@@ -143,7 +143,7 @@ if st.button("🔍 開始進行新聞摘要", type="primary"):
             # 方法2: 關鍵詞摘要
             keyword_sum = keyword_summary(text, 3)
             
-            st.subheader(f"{news['標題']}", divider='rainbow')
+            st.header(f"{news['標題']}", divider='rainbow')
             st.write(f"日期: {news['日期']}")
             
             with st.expander("查看完整新聞內容"):
