@@ -22,7 +22,7 @@ st.title('新聞資料庫')
 st.markdown("----")
 c1, c2 = st.columns(2)
 with c1:
-    date_filter_s = st.date_input("篩選新聞日期（開始時間）", value=datetime.date(2025, 6, 28), min_value=datetime.date(2025, 5, 20))
+    date_filter_s = st.date_input("篩選新聞日期（開始時間）", value=datetime.date(2025, 5, 20), min_value=datetime.date(2025, 5, 20))
 with c2:
     date_filter_e = st.date_input("篩選新聞日期（結束時間）", value=datetime.date.today(), min_value=datetime.date(2025, 5, 20))
 st.markdown("----")
